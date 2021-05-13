@@ -10,7 +10,9 @@ This is a framework for text recognition with image or camera.
 
 ### CocoaPods集成
 在项目的`Podfile`文件中添加`pod 'PaddleOCR'`,并执行`pod install`.
+
 注意：如果提示`PaddleOCR not found`,你需要在`Podfile`中添加`source 'https://github.com/CocoaPods/Specs.git'`,这个过程可能比较长,需要耐心等待.
+
 目前因为Git FLS流量优先，可能会出现`pod install`提示容量不足的情况,这种情况下需要使用手动导入的方式来集成.
 
 ## 使用说明
@@ -43,6 +45,7 @@ This is a framework for text recognition with image or camera.
 
 ## 其他
 如果有好的建议或使用中有疑问可以留言,我们共同来讨论.
+
 QQ：814829208
 
 
