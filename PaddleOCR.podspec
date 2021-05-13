@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PaddleOCR'
 
-  s.version      = '0.1.0'
+  s.version      = '0.1.2'
 
   s.summary      = 'This is a framework for text recognition with image or camera, you can use this framework in iOS applications.'
 
