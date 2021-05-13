@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PaddleOCR'
 
-  s.version      = '0.1.2'
+  s.version      = '0.1.3'
 
   s.summary      = 'This is a framework for text recognition with image or camera, you can use this framework in iOS applications.'
 
@@ -22,13 +22,10 @@ Pod::Spec.new do |s|
 
   s.resource = 'PaddleOCRResource.bundle'
 
-  s.frameworks = 'CoreMedia', 'CoreVideo', 'CoreGraphics', 'AVFoundation'
+  s.frameworks = 'CoreMedia', 'CoreVideo', 'AVFoundation'
 
   s.library = 'c++'
 
-  s.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-Objc', 'ENABLE_BITCODE' => 'NO' }
-
-  s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'TRUE' }
 
 
 end
