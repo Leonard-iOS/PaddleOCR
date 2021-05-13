@@ -1,0 +1,6 @@
+framework module PaddleOCR {
+  umbrella header "PaddleOCR.h"
+
+  export *
+  module * { export * }
+}

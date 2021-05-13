@@ -1,0 +1,2 @@
+PaddleOCR.framework/libpaddle_api_light_bundled.a filter=lfs diff=lfs merge=lfs -text
+PaddleOCR.framework/PaddleOCR filter=lfs diff=lfs merge=lfs -text
