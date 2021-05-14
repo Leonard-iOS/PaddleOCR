@@ -1,19 +1,23 @@
 # PaddleOCR
-一款能够通过传入相机输出数据或者`UIImage`来识别文字的工具，基于飞浆Paddle Lite库制作，识别效率极高，支持相机动态扫描识别，最重要的是免费！
+
+`PaddleOCR`是一款应用于iOS设备上的通用文字识别的OCR库,基于飞浆团队的`Paddle Lite`库制作,能同时支持动态图和静态图两种方式.
+
+对文本的识别效率极高，当然最重要的是免费！免费！免费！
 
 ## 集成说明
 ### 手动集成
 将`opencv2.framework`, `PaddleOCR.framework`, `PaddleOCRResource.bundle`依次导入到你的iOS项目中,并通过`RYPaddleOCR`对象创建OCR对象识别图片或者`Buffer`数据.
 1. 将项目`Targets` -> `Build Settings` -> `Enable Bitcode` 的值改为`No`.
-2. 在项目`Targets` -> `Build Settings` -> `Other Linker Flags`中,添加`-lc++`.
-3. 添加系统库`CoreMedia.framework`, `CoreVideo.framework`, `AVFountion.framework`到你的项目中.
+2. 在项目`Targets` -> `Build Settings` -> `Other Linker Flags`中,添加`-lc++`. 
+    或者在`Frameworks and Libraries`中手动添加`libC++.tbd`.
+3. 如还有报错信息，需添加系统库`CoreMedia.framework`, `CoreVideo.framework`, `AVFountion.framework`到你的项目中.
 
 ### CocoaPods集成
 在项目的`Podfile`文件中添加`pod 'PaddleOCR'`,并执行`pod install`.
 
 注意：如果提示`PaddleOCR not found`,你需要在`Podfile`中添加`source 'https://github.com/CocoaPods/Specs.git'`,这个过程可能比较长,需要耐心等待.
 
-目前因为Git FLS流量优先，可能会出现`pod install`提示容量不足的情况,这种情况下需要使用手动导入的方式来集成.
+目前因为`Git FLS`流量有限，可能会出现`pod install`提示容量不足的情况,这种情况下需要使用手动导入的方式来集成.
 
 ## 使用说明
 `PaddleOCR`仅在真机条件下有效,请连接设备后再测试效果.
