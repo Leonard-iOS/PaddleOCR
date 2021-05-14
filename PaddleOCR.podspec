@@ -2,11 +2,11 @@ Pod::Spec.new do |s|
 
   s.name         = 'PaddleOCR'
 
-  s.version      = '0.1.4'
+  s.version      = '0.2.0'
 
   s.summary      = 'This is a framework for text recognition with image or camera, you can use this framework in iOS applications.'
 
-  s.description  = 'Your can access PaddleOCR.framework into your applications to recognition text.'
+  s.description  = 'Your can access PaddleOCR.framework into your applications to recognition text, you can use the device camera or use photos to get some tex.'
 
   s.homepage     = 'https://github.com/Leonard-iOS/PaddleOCR'
 
@@ -24,7 +24,14 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'CoreMedia', 'CoreVideo', 'AVFoundation'
 
+  s.dependency 'OpenCV2'
+
   s.library = 'c++'
+
+  s.pod_target_xcconfig = {
+  'DEFINES_MODULE' => 'YES',
+  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
+  }
 
 
 
