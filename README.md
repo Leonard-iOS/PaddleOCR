@@ -1,5 +1,5 @@
 # PaddleOCR
-This is a framework for text recognition with image or camera.
+一款能够通过传入相机输出数据或者`UIImage`来识别文字的工具，基于飞浆Paddle Lite库制作，识别效率极高，支持相机动态扫描识别，最重要的是免费！
 
 ## 集成说明
 ### 手动集成
@@ -46,6 +46,7 @@ This is a framework for text recognition with image or camera.
 ## 其他
 如果有好的建议或使用中有疑问可以留言,我们共同来讨论.
 
-QQ：814829208
+![weichat](https://user-images.githubusercontent.com/18459255/118212985-aec6dc80-b49f-11eb-95be-59fcdf7e0d64.jpeg)
+
 
 
