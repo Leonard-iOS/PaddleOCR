@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param sampleBuffer  视频buffer
  *  @return 返回生成的图像
  */
-+ (UIImage *)toImage:(CMSampleBufferRef)sampleBuffer CF_RETURNS_RETAINED;
++ (UIImage *_Nullable)toImage:(CMSampleBufferRef)sampleBuffer CF_RETURNS_RETAINED;
 
 @end
 

@@ -14,8 +14,11 @@
 
 ### CocoaPods集成
 在项目的`Podfile`文件中添加`pod 'PaddleOCR'`,并执行`pod install`.
+1. 将项目`Targets` -> `Build Settings` -> `Enable Bitcode` 的值改为`No`.
+2. 在项目`Targets` -> `Build Settings` -> `Other Linker Flags`中，用`$(inherited)`代替其他输入项.
 
 ## 使用说明
+
 1. 使用`SampleBuffer`作为参数进行扫描,可以使用以下方式：
 ```
 /*

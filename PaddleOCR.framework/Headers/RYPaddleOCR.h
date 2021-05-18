@@ -19,7 +19,7 @@
  *  @param complete 返回识别后的信息
  */
 - (void)scanTextFromSampleBuffer:(CMSampleBufferRef)sampleBuffer
-             complete:(void(^)(NSArray<OcrData *> *))complete;
+             complete:(void(^)(NSArray<OcrData *> *ocrDataList))complete;
 
 /*
  *  传入图片开始扫描，返回扫描到的文本
@@ -28,7 +28,7 @@
  *  @param complete 返回识别后的信息
  */
 - (void)scanTextFrom:(UIImage *)image
-             complete:(void(^)(NSArray<OcrData *> *))complete;
+             complete:(void(^)(NSArray<OcrData *> *ocrDataList))complete;
 
 /*
  *  取消扫描任务
