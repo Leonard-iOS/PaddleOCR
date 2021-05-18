@@ -15,12 +15,7 @@
 ### CocoaPods集成
 在项目的`Podfile`文件中添加`pod 'PaddleOCR'`,并执行`pod install`.
 
-注意：如果提示`PaddleOCR not found`,你需要在`Podfile`中添加`source 'https://github.com/CocoaPods/Specs.git'`,这个过程可能比较长,需要耐心等待.
-
-目前因为`Git FLS`流量有限，可能会出现`pod install`提示容量不足的情况,这种情况下需要使用手动导入的方式来集成.
-
 ## 使用说明
-`PaddleOCR`仅在真机条件下有效,请连接设备后再测试效果.
 1. 使用`SampleBuffer`作为参数进行扫描,可以使用以下方式：
 ```
 /*
