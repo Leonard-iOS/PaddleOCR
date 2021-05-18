@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.author       = { 'Leonard' => '814829208@qq.com' }
 
-  s.platform     = :ios, '10.0'
+  s.platform     = :ios, '8.0'
   
   s.source       = { :git => 'https://github.com/Leonard-iOS/PaddleOCR.git', :tag => s.version }
 
