@@ -47,8 +47,7 @@
 
 ## 其他
 如果有好的建议或使用中有疑问可以留言,我们共同来讨论.
-
-<img width="501" alt="WX20210601-092548@2x" src="https://user-images.githubusercontent.com/18459255/120253997-6428cb00-c2bb-11eb-80d6-c6f8486f1507.png">
+有使用问题，或者想参与PaddleOCR的讨论，请联系我们：moyusword@yeah.net
 
 
 
