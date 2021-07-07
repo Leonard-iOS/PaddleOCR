@@ -47,7 +47,7 @@
 
 ## 其他
 如果有好的建议或使用中有疑问可以留言,我们共同来讨论.
-有使用问题，或者想参与PaddleOCR的讨论，请联系我们：moyusword@yeah.net
+邮箱：moyusword@yeah.net
 
 
 
