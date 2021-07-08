@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PaddleOCR'
 
-  s.version      = '0.2.2'
+  s.version      = '0.2.3'
 
   s.summary      = 'This is a framework for text recognition with image or camera, you can use this framework in iOS applications.'
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
-  s.author       = { 'Leonard' => '814829208@qq.com' }
+  s.author       = { 'Leonard' => 'moyusword@gmail.com' }
 
   s.platform     = :ios, '9.0'
   
