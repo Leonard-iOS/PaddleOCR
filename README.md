@@ -7,8 +7,9 @@
 ## 集成说明
 ### CocoaPods集成（*推荐使用*）
 在项目的`Podfile`文件中添加`pod 'PaddleOCR'`,并执行`pod install`.
-1. 将项目`Targets` -> `Build Settings` -> `Enable Bitcode` 的值改为`No`.
-2. 在项目`Targets` -> `Build Settings` -> `Other Linker Flags`中，用`$(inherited)`代替其他输入项.
+1. 本项目因相关资源过大，使用了`Git LFS`配置，在进行cocoapods前请先安装`Git LFS`，使用说明参考https://git-lfs.github.com/
+2. 将项目`Targets` -> `Build Settings` -> `Enable Bitcode` 的值改为`No`.
+3. 在项目`Targets` -> `Build Settings` -> `Other Linker Flags`中，用`$(inherited)`代替其他输入项.
 
 ### 手动集成（需自行下载`OpenCV`库资源）
 将`OpenCV2.framework`, `PaddleOCR.framework`, `PaddleOCRResource.bundle`依次导入到你的iOS项目中.
@@ -40,7 +41,7 @@
 
 ## Git LFS及其他说明
 1. `PaddleOCR`库的部分功能依赖`OpenCV`，在`pod install`时可能会提示网络错误等情况，有条件的开发者可以使用代理解决，或者使用其他开发者提供的`OpenCV`库.
-2. 因`PaddleOCR`的二进制文件以及依赖库的体积限制，本项目上传使用了Git LFS功能，如果使用cocopods集成后出现下面的情况，说明`PaddleOCR.framework`文件没有正确下载，请检查`PaddleOCR.framework`文件的大小，正常约为177M，如果出现这种问题请直接通过下面的邮件联系我，我会提供对应的文件资源.
+2. 因`PaddleOCR`的相关资源限制，使用了`Git LFS`大文件处理方案，在使用cocopods集成后出现下面的情况，说明`PaddleOCR.framework`文件没有正确下载，请检查`PaddleOCR.framework`文件的大小，正常约为180M左右. 可以按照`cocoapods集成说明`来解决问题，如仍无法解决或是有其他疑问请使用下面的联系方式向我反馈，我会提供对应的解决方案或相关文件资源.
 ```
 undefined symbols for architecture arm64:
 "OBJC_CLASS$_OcrData", referenced from:
