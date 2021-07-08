@@ -1,8 +1,7 @@
 # PaddleOCR
 
-`PaddleOCR`是一款应用于iOS设备上的通用文字识别的OCR库,基于飞浆团队的`Paddle Lite`库制作,能同时支持动态图和静态图两种方式.
-
-对文本的识别效率极高，当然最重要的是免费！免费！免费！
+`PaddleOCR`是一款应用于iOS设备上的通用文字识别的OCR库，基于飞浆团队的`Paddle Lite`库制作，能同时支持动态图和静态图两种方式，对文本的识别效率极高。
+部分识别效率不高的场景可以通过调整图片的处理方式来提高识别率，如需要更精确的识别结果，建议前往 [PaddleOCR官方](https://github.com/PaddlePaddle/PaddleOCR)下载更高精度的模型替换本项目内的模型文件来提高识别精确度。
 
 ## 集成说明
 ### CocoaPods集成（*推荐使用*）
@@ -38,6 +37,9 @@
 ```
 
 3. 也可以随时通过`cancelScanTask`来结束扫描任务.
+
+## Demo使用说明
+Demo下载后打开`Podfile`中的注释，并执行`pod install`，资源加载完毕后即可查看Demo预览效果。
 
 ## Git LFS及其他说明
 1. `PaddleOCR`库的部分功能依赖`OpenCV`，在`pod install`时可能会提示网络错误等情况，有条件的开发者可以使用代理解决，或者使用其他开发者提供的`OpenCV`库.

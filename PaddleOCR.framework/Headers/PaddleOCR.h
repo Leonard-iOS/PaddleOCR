@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "RYPaddleOCR.h"
+#import "MLPaddleOCR.h"
 
 //! Project version number for PaddleOCR.
 FOUNDATION_EXPORT double PaddleOCRVersionNumber;

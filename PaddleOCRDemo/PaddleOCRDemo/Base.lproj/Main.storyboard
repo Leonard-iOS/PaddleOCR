@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,10 +35,25 @@
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D96-pA-7NB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d98-jZ-Aac">
+                                <rect key="frame" x="127" y="681" width="160" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FkI-IQ-YbE"/>
+                                    <constraint firstAttribute="width" constant="160" id="bHa-c9-c8Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="从相册选择图片"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUA-BZ-yjj"/>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ROu-GZ-oBL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="d98-jZ-Aac" firstAttribute="centerX" secondItem="7ND-Id-EX0" secondAttribute="centerX" id="45u-oH-O0K"/>
+                            <constraint firstItem="d98-jZ-Aac" firstAttribute="top" secondItem="7ND-Id-EX0" secondAttribute="bottom" constant="29" id="HEj-4H-w4x"/>
                             <constraint firstItem="7ND-Id-EX0" firstAttribute="top" secondItem="6JQ-y3-oIC" secondAttribute="bottom" constant="70" id="TFd-T9-WjI"/>
                             <constraint firstAttribute="trailing" secondItem="6JQ-y3-oIC" secondAttribute="trailing" id="VrA-NP-iNk"/>
                             <constraint firstItem="7ND-Id-EX0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ooT-l9-xJr"/>

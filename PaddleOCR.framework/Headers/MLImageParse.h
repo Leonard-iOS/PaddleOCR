@@ -14,5 +14,8 @@
 /// Convert the video stream output by the camera into an image
 + (UIImage *_Nullable)toImage:(CMSampleBufferRef _Nullable )sampleBuffer CF_RETURNS_RETAINED;
 
+/// rotated image
++ (CGImageRef)createRotatedImage:(CGImageRef)original;
+
 @end
 
