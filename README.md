@@ -7,7 +7,7 @@
 ## 集成说明
 ### CocoaPods集成（*推荐使用*）
 在项目的`Podfile`文件中添加`pod 'PaddleOCR'`,并执行`pod install`.
-1. 本项目因相关资源过大，使用了`Git LFS`配置，在进行cocoapods前请先安装`Git LFS`，使用说明参考https://git-lfs.github.com/
+1. 本项目因相关资源过大，使用了`Git LFS`配置，在进行`pod install`前请先安装`Git LFS`，使用说明参考https://git-lfs.github.com/
 2. 将项目`Targets` -> `Build Settings` -> `Enable Bitcode` 的值改为`No`.
 3. 在项目`Targets` -> `Build Settings` -> `Other Linker Flags`中，用`$(inherited)`代替其他输入项.
 
@@ -52,8 +52,9 @@ ld: symbol(s) not found for architecture arm64
 ```
 
 ## 其他
-如果有好的建议或使用中有疑问可以通过下面的联系方式联系我，目前`PaddleOCR` iOS开发者交流群已经创建，有希望入群的开发者可以在邮件中备注自己的加群要求和联系方式，让我们共同来讨论如何做出一个更好的iOS OCR工具.
-邮箱：moyusword@gmail.com
+如果有好的建议或使用中有疑问可以通过下面的联系方式联系我，目前`PaddleOCR iOS开发者交流群`已经创建，有希望入群的开发者可以在邮件中备注自己的加群要求和联系方式，让我们共同来讨论如何做出一个更好的iOS OCR工具.
+
+*邮箱*：moyusword@gmail.com
 
 
 
