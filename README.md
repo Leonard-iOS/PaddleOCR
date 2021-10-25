@@ -42,8 +42,10 @@
 Demo下载后打开`Podfile`中的注释，并执行`pod install`，资源加载完毕后即可查看Demo预览效果。
 
 ## Git LFS及其他说明
-1. `PaddleOCR`库的部分功能依赖`OpenCV`，在`pod install`时可能会提示网络错误等情况，有条件的开发者可以使用代理解决，或者使用其他开发者提供的`OpenCV`库.
-2. 因`PaddleOCR`的相关资源限制，使用了`Git LFS`大文件处理方案，在使用cocopods集成后出现下面的情况，说明`PaddleOCR.framework`文件没有正确下载，请检查`PaddleOCR.framework`文件的大小，正常约为180M左右. 可以按照`cocoapods集成说明`来解决问题，如仍无法解决或是有其他疑问请使用下面的联系方式向我反馈，我会提供对应的解决方案或相关文件资源.
+- `PaddleOCR`库的部分功能依赖`OpenCV`，在`pod install`时可能会提示网络错误等情况，有条件的开发者可以使用代理解决，或者使用其他开发者提供的`OpenCV`库.
+- 因`PaddleOCR`的相关资源限制，使用了`Git LFS`大文件处理方案，可能会出现文件缺失或资源类型不正确的情况。
+- 在使用cocopods集成后出现下面的情况，说明`PaddleOCR.framework`文件没有正确下载，请检查`PaddleOCR.framework`文件的大小，正常约为180M左右。
+- 如大小不正确请使用`git clone`的方式下载本项目源代码，将下载下来的`PaddleOCR.framework`内的`PaddleOCR`和`libpaddle_api_light_bundled.a`文件替换到项目中再次编译，如仍无法正常编译，可以联系作者解决。
 ```
 undefined symbols for architecture arm64:
 "OBJC_CLASS$_OcrData", referenced from:
